@@ -9,5 +9,11 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
+        <Button x:Name="btnClickMe" Content="Click Me"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top" Click="btnClickMe_Click" />
+        <TextBlock x:Name="tblHello" Text=""
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"/>
     </Grid>
 </Page>

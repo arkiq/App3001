@@ -17,6 +17,10 @@ using Windows.UI.Xaml.Navigation;
 
 namespace App3001
 {
+    // add a button - one event handler
+    // add a textblock -blank text
+    // click the button - text change to Hello World.
+
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
@@ -25,6 +29,18 @@ namespace App3001
         public MainPage()
         {
             this.InitializeComponent();
+        }
+
+        private void btnClickMe_Click(object sender, RoutedEventArgs e)
+        {
+            if( tblHello.Text == "")
+            {
+                tblHello.Text = "Hello Git World";
+            }
+            else
+            {
+                tblHello.Text = "";
+            }
         }
     }
 }
